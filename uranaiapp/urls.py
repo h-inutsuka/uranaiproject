@@ -1,0 +1,65 @@
+from django.urls import path
+from . import views
+from .views import random_oracle
+
+app_name = 'uranaiapp'
+
+urlpatterns = [
+    path('', views.IndexView.as_view(), name='index'),
+# 大アルカナのカードの説明
+    path('chariot_e/', views.Chariot_e.as_view(), name='chariot_e'),
+    path('death_e/', views.Death_e.as_view(), name='death_e'),
+    path('devil_e/', views.Devil_e.as_view(), name='devil_e'),
+    path('devination/', views.Devination_e.as_view(), name='devination_e'),
+    path('emperor/', views.Emperor_e.as_view(), name='emperor_e'),
+    path('empress_e/', views.Empress_e.as_view(), name='empress_e'),
+    path('fool_e/', views.Fool_e.as_view(), name='fool_e'),
+    path('fortune_e/', views.Fortune_e.as_view(), name='fortune_e'),
+    path('hermit_e/', views.Hermit_e.as_view(), name='hermit_e'),
+    path('hierophant_e/', views.Hierophant_e.as_view(), name='hierophant_e'),
+    path('judgement_e/', views.Judgement_e.as_view(), name='judgement_e'),
+    path('justice_e/', views.Justice_e.as_view(), name='justice_e'),
+    path('lover_e/', views.Lover_e.as_view(), name='lovers_e'),
+    path('magician/', views.Magician_e.as_view(), name='magician_e'),
+    path('man_e/', views.Man_e.as_view(), name='man_e'),
+    path('moon/', views.Moon_e.as_view(), name='moon_e'),
+    path('priestess_e/', views.Priestess_e.as_view(), name='priestess_e'),
+    path('star_e/', views.Star_e.as_view(), name='star_e'),
+    path('strength/', views.Strength_e.as_view(), name='strength_e'),
+    path('sun_e/', views.Sun_e.as_view(), name='sun_e'),
+    path('tower_e/', views.Tower_e.as_view(), name='tower_e'),
+    path('temperance_e/', views.Temperance_e.as_view(), name='temperance_e'),
+    path('world_e/', views.World_e.as_view(), name='world_e'),
+# 小アルカナ
+    path('wands/', views.Wands.as_view(), name='wands'),
+    path('pentacles/', views.Pentacles.as_view(), name='pentacles'),
+    path('cups/', views.Cups.as_view(), name='cups'),
+    path('swords/', views.Swords.as_view(), name='swords'),
+# 大アルカナの詳細説明
+    path('E_one_oracle/', views.E_one_oracle.as_view(), name='E_one_oracle'),
+    path('E_two_oracle/', views.E_twe_oracle.as_view(), name='E_two_oracle'),
+    path('E_two_mind/', views.E_two_mind.as_view(), name='E_two_mind'),
+    path('E_simple_cross/', views.E_simple_cross.as_view(), name='E_simple_cross'),
+    path('E_three_card/', views.E_three_card.as_view(), name='E_three_card'),
+    path('E_golden_trine/', views.E_golden_trine.as_view(), name='E_golden_trine'),
+    path('E_four_card/', views.E_four_card.as_view(), name='E_four_card'),
+    path('E_diamond_cross/', views.E_diamond_cross.as_view(), name='E_diamond_cross'),
+    path('E_jupiter_spread/', views.E_jupiter_spread.as_view(), name='E_jupiter_spread'),
+    path('E_treasure_triangle/', views.E_treasure_triangle.as_view(), name='E_treasure_triangle'),
+    path('E_cross_spread/', views.E_cross_spread.as_view(), name='E_cross_spread'),
+    path('E_greek_cross/', views.E_greek_cross.as_view(), name='E_greek_cross'),
+    path('E_pentagram/', views.E_pentagram.as_view(), name='E_pentagram'),
+    path('E_pyramid/', views.E_pyramid.as_view(), name='E_pyramid'),
+    path('E_two_companies/', views.E_two_companies.as_view(), name='E_two_companies'),
+    path('E_hexagram/', views.E_hexagram.as_view(), name='E_hexagram'),
+    path('E_horseshoe/', views.E_horseshoe.as_view(), name='E_horseshoe'),
+    path('E_seven_tailings/', views.E_seven_tailings.as_view(), name='E_seven_tailings'),
+    path('E_seven_days/', views.E_seven_days.as_view(), name='E_seven_days'),
+    path('E_spiritual_spread/', views.E_spiritual_spread.as_view(), name='E_spiritual_spread'),
+    path('E_compatibility_method/', views.E_compatibility_method.as_view(), name='E_compatibility_method'),
+    path('E_nine_card/', views.E_nine_card.as_view(), name='E_nine_card'),
+    path('E_celtic_cross/', views.E_celtic_cross.as_view(), name='E_celtic_cross'),
+    path('E_horoscope_spread/', views.E_horoscope_spread.as_view(), name='E_horoscope_spread'),
+# ワンオラクルのランダムURL用
+    path("random_result/", random_oracle, name="one_oracle_randam"),
+]

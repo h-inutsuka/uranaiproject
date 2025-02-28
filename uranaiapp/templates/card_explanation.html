@@ -1,0 +1,52 @@
+</div>
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+    カード説明
+    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+</a>
+<div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+            大アルカナ
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+            <nav class="sb-sidenav-menu-nested nav">
+                <a class="nav-link" href="{% url 'uranaiapp:fool_e' %}">愚者</a>
+                <a class="nav-link" href="{% url 'uranaiapp:magician_e' %}">魔術師</a>
+                <a class="nav-link" href="{% url 'uranaiapp:priestess_e' %}">女教皇</a>
+                <a class="nav-link" href="{% url 'uranaiapp:empress_e' %}">女帝</a>
+                <a class="nav-link" href="{% url 'uranaiapp:emperor_e' %}">皇帝</a>
+                <a class="nav-link" href="{% url 'uranaiapp:hierophant_e' %}">教皇</a>
+                <a class="nav-link" href="{% url 'uranaiapp:lovers_e' %}">恋人</a>
+                <a class="nav-link" href="{% url 'uranaiapp:chariot_e' %}">戦車</a>
+                <a class="nav-link" href="{% url 'uranaiapp:strength_e' %}">力</a>
+                <a class="nav-link" href="{% url 'uranaiapp:hermit_e' %}">隠者</a>
+                <a class="nav-link" href="{% url 'uranaiapp:fortune_e' %}">運命の輪</a>
+                <a class="nav-link" href="{% url 'uranaiapp:justice_e' %}">正義</a>
+                <a class="nav-link" href="{% url 'uranaiapp:man_e' %}">吊るされた男</a>
+                <a class="nav-link" href="{% url 'uranaiapp:death_e' %}">死神</a>
+                <a class="nav-link" href="{% url 'uranaiapp:temperance_e' %}">節制</a>
+                <a class="nav-link" href="{% url 'uranaiapp:devil_e' %}">悪魔</a>
+                <a class="nav-link" href="{% url 'uranaiapp:tower_e' %}">塔</a>
+                <a class="nav-link" href="{% url 'uranaiapp:star_e' %}">星</a>
+                <a class="nav-link" href="{% url 'uranaiapp:moon_e' %}">月</a>
+                <a class="nav-link" href="{% url 'uranaiapp:sun_e' %}">太陽</a>
+                <a class="nav-link" href="{% url 'uranaiapp:judgement_e' %}">審判</a>
+                <a class="nav-link" href="{% url 'uranaiapp:world_e' %}">世界</a>
+            </nav>
+        </div>
+        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+            小アルカナ
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+            <nav class="sb-sidenav-menu-nested nav">
+                <a class="nav-link" href="{% url 'uranaiapp:wands' %}">ワンド</a>
+                <a class="nav-link" href="{% url 'uranaiapp:pentacles' %}">ペンタクル</a>
+                <a class="nav-link" href="{% url 'uranaiapp:cups' %}">カップ</a>
+                <a class="nav-link" href="{% url 'uranaiapp:swords' %}">ソード</a>
+            </nav>
+        </div>
+    </nav>
+</div>
